@@ -1,4 +1,8 @@
+@import('partials/game')
+
 body
+  font:
+    family: $primary-font
   background:
     image: url("../images/board.jpg")
     position: center
@@ -19,30 +23,6 @@ body
     text-align: center
     opacity: 0.7
 
-.container
-  width: 70%
-  height: 80vh
-  position: relative
-  z-index: 2
-  margin: 10vh 15%
-  text-align: center
-
-.game
-  &__board-centered-box
-    background-color: #fff
-    padding: 20px
-    width: 50%
-    margin: auto
-
-  &__game-over-img
-    width: 300px
-  &__operator-box
-    border: 3px solid #000
-    border-radius: 8px
-    display: inline-block
-    padding: 5px 8px
-    margin-bottom: 8px
-
 .clock
   font-size: 50px
   font-weight: 800
@@ -51,7 +31,7 @@ body
   width: 20px
 
 .btn
-  background-color: #3274A7
+  background-color: $primary-blue
   color: #fff
   border: 0
   box-shadow: 0px
