@@ -1,0 +1,69 @@
+.container {
+  border: solid 10px black;
+    border-radius: 10px;
+  width: 60vh;
+  height: 68vh;
+  position: relative;
+  z-index: 2;
+  margin: 10vh 20%;
+  text-align: center;
+  box-shadow: 0 5px 10px gray; }
+
+.game__board {
+  border: solid 10px black; }
+  .game__board-centered-box {
+    background-color: #fff;
+    padding: 0 20px;
+    width: 50%;
+    margin: auto; }
+
+.game__game-over-img {
+  width: 300px; }
+
+.game__operator-box {
+  border: 3px solid #000;
+  border-radius: 8px;
+  display: inline-block;
+  padding: 5px 8px;
+  margin-bottom: 8px; }
+
+.game__number-limit-range {
+  margin-top: 10px; }
+
+.game__answer {
+  width: 90px; }
+
+body {
+  font-family: Montserrat; }
+  body::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 70%;
+    height: 80vh;
+    margin: 10vh 15%;
+    text-align: center;
+    opacity: 0.7; }
+
+.clock {
+  font-size: 50px;
+  font-weight: 800; }
+  .clock-separator {
+    margin: 40px auto; }
+
+.math-op-icon {
+  width: 20px; }
+
+.btn {
+  background-color: rgba(215, 44, 44, 0.8);
+  color: #fff;
+  border: 0;
+  box-shadow: 0px;
+  border-radius: 4px;
+  padding: 12px 18px;
+  margin-top: 10px; }
+
+.restart {
+  margin: 3px; }
