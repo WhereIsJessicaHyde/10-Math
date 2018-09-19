@@ -13,52 +13,56 @@
     <!-- Custon CSS -->
     <link  href="css/style.css" rel="stylesheet">
   </head>
+
   <body>
-    <div id="game-container">
+
+    <div class="container">
+
       <h1>Ten Seconds Math Game</h1>
 
-      <section id="game-board" class="centered-box">
-        <div class="separator"> <span id="clock">10</span> seconds left</div>
-        <div><img id="game-over-img" src="images/gameover.jpg" alt=""></div>
-        <div class="separator align-box"> <span class="highlight-span" id="question"></span></div>
-        <div class="separator align-box"> <input id="answer" placeholder="answer" ></div>
+      <section class="game game__board-centered-box">
+        <div class="separator"> <span class="clock">10</span> seconds left</div>
+        <div><img class="game__game-over-img" src="images/gameover.jpg" alt=""></div>
+        <div class="separator align-box"> <span class="highlight-span game__question"></span></div>
+        <div class="separator align-box"> <input game="game__answer" placeholder="answer" ></div>
         <div class="separator"><button id="restart" class="btn">Restart</button></div>
       </section>
 
-      <section id="game-options" class="centered-box">
+      <section class="game__options game__board-centered-box">
         <h2>Game Options</h2>
-        <div class="centered-box-separator">
+        <div class="board-centered-box-separator">
           <label for="number-limit-range">Number Limit: <span class="highlight-span" id="number-limit">10</span></label>
           <input id="number-limit-range" type="range" min="10" max="100" value="10" step="10" />
         </div>
 
-        <div class="centered-box-separator">
+        <div class="game__board-centered-box-separator">
           <h3>Operators</h3>
-          <div id="operators-container">
-            <div class="operator-box">
-              <input type="checkbox" class="option-box" id="addition" checked="true">
+          <div class="game__operators-container">
+            <div class="game__operator-box">
+              <input type="checkbox" class="game__option-box game__addition" checked="true">
               <img class="math-op-icon" src="images/add.jpg" alt="">
             </div>
-            <div class="operator-box">
-              <input type="checkbox" class="option-box" id="substraction">
+            <div class="game__operator-box">
+              <input type="checkbox" class="game__option-box game__substraction">
               <img class="math-op-icon" src="images/substract.jpg" alt="">
             </div><br>
-            <div class="operator-box">
-              <input type="checkbox" class="option-box" id="multiplication">
+            <div class="game__operator-box">
+              <input type="checkbox" class="game__option-box game__multiplication">
               <img class="math-op-icon" src="images/multiply.jpg" alt="">
             </div>
-            <div class="operator-box">
-              <input type="checkbox" class="option-box" id="division">
+            <div class="game__operator-box">
+              <input type="checkbox" class="game__option-box game__division">
               <img class="math-op-icon" src="images/divide.jpg" alt="">
             </div>
           </div>
         </div>
-        <div class="centered-box separator">
+        <div class="game__board-centered-box separator">
           <button id="start" class="btn">Start Game</button>
         </div>
       </section>
 
       <img src="https://en.bitcoin.it/w/images/en/5/50/Bitcoin.png" class="img-responsive" id="btc-reward">
+
     </div>
 
 
